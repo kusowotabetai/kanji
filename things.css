@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+   
 }
 
 .menu{
@@ -30,7 +32,28 @@ i{
 body .container{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
    
+    border: 1px solid black;
+    border-top: none;
+    
+}
+.container .boxthings{
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+.boxmonths{
+    border-right: 2px solid black;
+}
+.boxman{
+   
+}
+.boxdays{
+    border-right: 2px solid black;
 }
 .dark{
     background-color: black;
@@ -38,9 +61,8 @@ body .container{
 }
 .container .item{
    
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
-    text-align: center;
     font-weight: lighter ;
    
     
@@ -52,26 +74,36 @@ body .container{
 .bold{
     font-weight: 900 !important;
 }
+.boxthings .one{
+    color: blue;
+}
+.boxthings .sp{
+    background-color: #ED8A0A;
+}
+.boxdays .one{
+    color: blue;
+}
+.boxdays .sp{
+    background-color: greenyellow;
+}
+.boxman .one{
+   color: blue;
+}
+.boxman .sp{
+    background-color: #45EBA5;
+}
 
-sub{
-    font-size: 12px;
+.boxmonths .one{
+    color: blue;
 }
-img{
-    max-width: 30%;
-    height: 50px;
-}
-button{
-    padding:0px 8px;
-    border-radius: 0%;
-    margin-left: 30%;
-    background-color: chocolate;
-    color: #000;
+.boxmonths .sp{
+    background-color: #F6D912;
 }
 
 @media only screen and (width:300px) {
     /* For mobile phones: */
     .container .item{
-        font-size: 30px;
+        font-size: 20px;
         
     }
    
@@ -79,7 +111,7 @@ button{
 @media only screen and (width:350px) {
     /* For mobile phones: */
     .container .item{
-        font-size: 35px;
+        font-size: 22px;
         
     }
    
@@ -93,39 +125,4 @@ button{
     }
    
 }
-
-@media only screen and (width:500px) {
-    /* For mobile phones: */
-    .container .item{
-        font-size: 50px;
-        
-    }
-   
-}
-@media only screen and (width:600px) {
-    /* For mobile phones: */
-    .container .item{
-        font-size: 60px;
-        
-    }
-   
-}
-@media only screen and (width:700px) {
-    /* For mobile phones: */
-    .container .item{
-        font-size: 70px;
-        
-    }
-   
-}
-@media only screen and (min-width:768px) {
-    /* For mobile phones: */
-    .container .item{
-        font-size: 80px;
-        
-    }
-   
-}
-
-
 

@@ -117,4 +117,7 @@ if(l_mode==="enable"){
      light.className="bx bx-sun"
 
  }
-    
+ 
+ function next(){
+    window.open("things.html");
+ }
